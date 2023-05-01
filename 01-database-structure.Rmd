@@ -1,0 +1,12 @@
+# My database structure
+
+install.packages("DBI")
+library(DBI)
+
+my_db <- dbConnect(RSQLite::SQLite(), "muledeercrossingevents")
+
+summary(my_db)
+
+#This database was created to condense crossing events that were captured on a wildlife overpass in Utah
+
+#I haven't added any connections or deviations from the table because my project did not call for it (Discussed with Simona)
